@@ -18,7 +18,7 @@ namespace ConsoleApp1
             for (int i = 0; i < 5; i++)
             {   Console.WriteLine("Marks obtained: ");
                 arr[i] = Convert.ToInt32(Console.ReadLine());
-                total+= arr[i];
+                total = total + arr[i];
             }
             perc = Convert.ToDouble(total) / 5;
             Console.WriteLine("Your total marks obtained is : " + total);
