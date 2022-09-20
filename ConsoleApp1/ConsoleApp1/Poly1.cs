@@ -25,7 +25,7 @@ namespace ConsoleApp1
         {
             Poly1 poly1 = new Poly1();
             poly1.add();
-            poly1.add(69, 420);
+            poly1.add(67, 40);
 
         }
     }

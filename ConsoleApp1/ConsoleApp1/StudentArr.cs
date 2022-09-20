@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{
+{   //belongs to C#Task2
     internal class StudentArr
     {
         public static void Main()

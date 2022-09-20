@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ConsoleApp1
-{   class VAT
+{   //belongs to C#Task3
+    class VAT
     {
         int taxPerc = 20;
         int totalAmt;

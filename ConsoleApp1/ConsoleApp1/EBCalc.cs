@@ -9,7 +9,7 @@ namespace ConsoleApp1
     internal class EBCalc
     {
         public static void Main()
-        {
+        {   //belongs to C#Task1
             int slab1 = 200, slab2 = 150, slab3 = 150; //slab
             int r1 = 2, r2 = 3, r3 = 5, r4 = 7; //rate
             int temp1, temp2, temp3;
