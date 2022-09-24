@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>gradient.exe</title>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body {
+        background-image: linear-gradient(to right, #955BEE, #9EA3EE);
+        text-align: center;
+        color: #D8D8D8;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header {
+        background-color: #422577;
+        padding: 10px;
+        height:25%;
+        text-align: center;
+        font-size: 150%;
+    }
+    .row{
+        display:flex;
+        color: #181818;
+        display:-webkit-flex;
+    }
+    .column{
+        -webkit-flex:1;
+        -ms-flex:1;
+        justify-content:center;
+        padding:10px;
+        height:420px;
+    }
+    .footer {
+        color:#16213E;
+        background-color: #844ADD;
+        padding:10px;
+    }
+</style>
+</head>
+<body>
+    <p>Layout</p>
+    <div class="header">
+        <h2>Header</h2>
+    </div>
+    <div class="row">
+        <div class="column" style="background-color: #A66CFF">
+            Column
+        </div>
+        <div class="column" style="background-color: #9C9EFE">
+            Column
+        </div>
+        <div class="column" style="background-color: #AFB4FF">
+            Column
+        </div>
+    </div>
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+</html>

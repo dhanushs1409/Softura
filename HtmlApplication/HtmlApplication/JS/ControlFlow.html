@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>control-flow</title>
+    <style>
+        body {
+            background-color: #252525;
+            color: #D8D8D8;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let age = 20;
+        let gpa = 8;
+        let gender = 'm';
+        if (age > 18)
+            if (gpa > 6) {
+                console.log('Eligible for the job!');
+                if (gender.toUpperCase() == 'M') {
+                    console.log('You could apply to day or night shift');
+                }
+                else if (gender.toUpperCase() == 'F') {
+                    console.log('We would recommend joining day shift');
+                }
+                else {
+                    console.log('Please try again...');
+                }
+            }
+            else {
+                console.log('Need a higher score');
+            }
+        else
+            console.log('Not eligible for the job');
+        gender = 'f';
+        if (age > 18)
+            if (gpa > 6) {
+                console.log('Eligible for the job!');
+                if (gender.toUpperCase() == 'M') {
+                    console.log('You could apply to day or night shift');
+                }
+                else if (gender.toUpperCase() == 'F') {
+                    console.log('We would recommend joining day shift');
+                }
+                else {
+                    console.log('Please try again...');
+                }
+            }
+            else {
+                console.log('Need a higher score');
+            }
+        else
+            console.log('Not eligible for the job');
+
+        //ternary operator
+        let Age = 18;
+        let info;
+        if (Age >= 18) {
+            info = 'Can drive';
+        }
+        else {
+            info = 'Can\'t drive';
+        }
+        console.log(info);
+
+        Age = 17;
+        Age >= 18 ? (info = 'Can drive') : (info = 'Can\'t drive');
+        console.log(info);
+
+        let membership = 'Gold';
+        switch (membership.toUpperCase()) {
+            case 'SILVER': console.log('You get 3 nights accomodation, but with no dinners on the house');
+                break;
+            case 'GOLD': console.log('You get 5 nights accomodation with 2 dinners on the house');
+                break;
+            case 'PLATINUM': console.log('You get 7 nights accomodation with 5 dinners on the house');
+                break;
+            default: console.log('Membership may be incorrect, please try again...');
+                break;
+        }
+
+
+    </script>
+</body>
+</html>

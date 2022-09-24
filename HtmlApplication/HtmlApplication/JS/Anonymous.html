@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>anonymous fns</title>
+    <style>
+        body {
+            background-color: #252525;
+            color: #D8D8D8;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let dis = function() {
+            console.log('I\'m a function in between lunch');
+        }
+        dis();
+
+        //function calll() {
+        //    console.log('Do something');
+        //}
+        //calll(function () {
+        //    console.log('Execute this function');
+        //}
+        //);
+     
+        //arrow functions...
+        let res = (n1, n2) => n1 + n2;
+
+        console.log(res(4, 2));
+        let dis1 = () => {
+            console.log('I\'m a function after lunch');
+        }
+        dis1();
+
+
+    </script>
+</body>
+</html>

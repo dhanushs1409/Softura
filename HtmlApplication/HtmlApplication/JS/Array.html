@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>array</title>
+</head>
+<body>
+    <script>
+        name = new Array('Swathi', 'Swetha', 'Krishna', 'Dhanush');
+        for (i = 0; i < 4; i++) {
+            document.write(name[i]);
+        }
+        document.write(name[0]);
+        let names = ['Ajay', 'Dev', 'Divya'];
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+
+        marks = new Array(45, 55, 56);
+        for (i = 0; i < 3; i++) {
+            console.log(marks[i]);
+        }
+        names[1] = 'Devendran';
+        names.push('Dhanush'); //adds to end
+        names.unshift('Samuel'); //adds to beginning
+        console.log(names);
+        console.log('\n');
+        lastName = names.pop();
+        console.log(names);
+        console.log('\n');
+        firstName = names.shift();
+        console.log(names);
+    </script>
+</body>
+</html>

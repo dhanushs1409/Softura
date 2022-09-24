@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>form</title>
+    
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form id="MyForm">
+        <table border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <td align="right">Name</td>
+                <td><input type="text" name="Name" id="name" required /></td>
+            </tr>
+            <tr>
+                <td align="right">Email</td>
+                <td><input type="email" name="Email" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" value="Submit" onclick="validate(), dispCountry()" /></td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+                <td>
+                    <select name="Country" id="country">
+                        <option value="-1" selected>Choose your country</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="USA">USA</option>
+                        <option value="Japan">Japan</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <p id="p1"></p>
+    <script>
+        function validate() {
+            let nval = document.getElementById("name").value;
+            try {
+                if (nval == "") throw "is empty";
+                if (!isNaN(nval)) throw "entered a number";
+            }
+            catch (err) {
+                alert(err);
+            }
+            let countryval = document.getElementById("country").value;
+            try {
+                if (countryval == -1) throw "select your country";
+            }
+            catch (err2) {
+                alert(err2);
+            }
+        }
+        function dispCountry() {
+            let str = "You belong to ";
+            // str += document.getElementById("country"); //gives [object HTMLSelectElement]
+            str += (document.getElementById("country").value+'<br/>');
+            document.getElementById("p1").innerHTML += str;
+        }
+    </script>
+</body>
+</html>
